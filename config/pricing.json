@@ -1,0 +1,83 @@
+{
+  "currency": "EUR",
+  "vat_rate": 0.2,
+  "pricing": {
+    "setup_fee": 8.0,
+    "machine_rate_per_min": 1.8,
+    "pierce_cost": 0.18,
+    "material_waste_factor": 1.15,
+    "sales_margin_factor": 1.35,
+    "minimum_order_ex_vat": 15.0
+  },
+  "materials": {
+    "S355JR": {
+      "label": "Acier S355JR",
+      "density_kg_m3": 7850,
+      "price_eur_kg": 1.35,
+      "thicknesses_mm": {
+        "1": 6500,
+        "1.5": 5800,
+        "2": 5000,
+        "3": 4000,
+        "4": 3300,
+        "5": 2800,
+        "6": 2300,
+        "8": 1750,
+        "10": 1400,
+        "12": 1100,
+        "15": 850,
+        "20": 600
+      }
+    },
+    "304L": {
+      "label": "Inox 304L",
+      "density_kg_m3": 8000,
+      "price_eur_kg": 4.2,
+      "thicknesses_mm": {
+        "1": 5000,
+        "1.5": 4400,
+        "2": 3800,
+        "3": 3000,
+        "4": 2450,
+        "5": 2050,
+        "6": 1700,
+        "8": 1250,
+        "10": 950,
+        "12": 760,
+        "15": 560
+      }
+    }
+  },
+  "shipping": {
+    "packaging_weight_kg": 0.5,
+    "padding_mm": 40,
+    "minimum_height_mm": 60,
+    "volumetric_divisor_cm3_per_kg": 5000,
+    "parcel_max_side_mm": 1000,
+    "parcel_max_weight_kg": 30,
+    "tiers": [
+      {
+        "max_kg": 2,
+        "price": 9.9
+      },
+      {
+        "max_kg": 5,
+        "price": 12.9
+      },
+      {
+        "max_kg": 10,
+        "price": 16.9
+      },
+      {
+        "max_kg": 20,
+        "price": 24.9
+      },
+      {
+        "max_kg": 30,
+        "price": 32.9
+      }
+    ],
+    "pallet_base_price": 79.0,
+    "pallet_price_per_kg_above_30": 0.55
+  }
+}
